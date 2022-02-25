@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "msgId",
+						"type": "uint256"
+					}
+				],
+				"name": "msgCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getLols",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "newLol",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "noOfLols",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "The name of the author",
+			"details": "Explain to a developer any extra details",
+			"kind": "dev",
+			"methods": {},
+			"title": "untitled",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Explain to an end user what this does",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"untitled.sol": "messageBoard"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.5.0/contracts/math/SafeMath.sol": {
+			"keccak256": "0xf64a28941d25250961c39bafffb245ae62e903abee89f607a7b9ea7e2460bec2",
+			"urls": [
+				"bzz-raw://3dc598b11889c9ed87d726de0158a0f3d24f3df0bb7f438a86a6835c1fcff516",
+				"dweb:/ipfs/QmaWWRi31c13VQw84RqLfBj2jHfF3tf8GjpcKN9WGe6vzj"
+			]
+		},
+		"untitled.sol": {
+			"keccak256": "0xc7cea43392819ba9e91b4bb6ee01c4d68ad9dc8fd6e2f8e6d52f90f8728283f7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ecb0f488ef493f82d38c2d41a833d5391c841ffdf5e797d5b8acba9e37895d95",
+				"dweb:/ipfs/QmZwz9VNry6t8d2e8VxRifaMXyrtycoB9WAkUSsZGmrw12"
+			]
+		}
+	},
+	"version": 1
+}
