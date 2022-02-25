@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.6+commit.11564f7e"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -19,13 +19,53 @@
 				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "getLols",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "givenEther",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reqdEther",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "sender",
+						"type": "address"
+					}
+				],
+				"name": "depositBy",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMessages",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timeCreated",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct messageBoard.Message[]",
+						"name": "",
+						"type": "tuple[]"
 					}
 				],
 				"stateMutability": "view",
@@ -33,22 +73,41 @@
 			},
 			{
 				"inputs": [],
-				"name": "newLol",
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_content",
+						"type": "string"
+					}
+				],
+				"name": "postMessage",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "setMsgPrice",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "noOfLols",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -71,7 +130,7 @@
 		"compilationTarget": {
 			"untitled.sol": "messageBoard"
 		},
-		"evmVersion": "berlin",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -83,7 +142,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.5.0/contracts/math/SafeMath.sol": {
+		"contracts/math/SafeMath.sol": {
 			"keccak256": "0xf64a28941d25250961c39bafffb245ae62e903abee89f607a7b9ea7e2460bec2",
 			"urls": [
 				"bzz-raw://3dc598b11889c9ed87d726de0158a0f3d24f3df0bb7f438a86a6835c1fcff516",
@@ -91,11 +150,11 @@
 			]
 		},
 		"untitled.sol": {
-			"keccak256": "0xc7cea43392819ba9e91b4bb6ee01c4d68ad9dc8fd6e2f8e6d52f90f8728283f7",
+			"keccak256": "0xc591e534b10637289ea47c06d9c54e99f1e796f6690d390bac0fb567b7a82124",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ecb0f488ef493f82d38c2d41a833d5391c841ffdf5e797d5b8acba9e37895d95",
-				"dweb:/ipfs/QmZwz9VNry6t8d2e8VxRifaMXyrtycoB9WAkUSsZGmrw12"
+				"bzz-raw://b4aa4270a0a3dad9c7bdcc7a994ea499111e12f1334cfd73b5765daa49633d39",
+				"dweb:/ipfs/QmXUF1a6bv7mdWjHWq1Xe2jfX5zD1CmKieAbys6T6bx9RD"
 			]
 		}
 	},

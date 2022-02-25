@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".deps\\github\\OpenZeppelin\\openzeppelin-contracts\\contracts\\math\\SafeMath.sol": "SafeMath"
+			"contracts\\math\\SafeMath.sol": "SafeMath"
 		},
 		"evmVersion": "berlin",
 		"libraries": {},
@@ -33,7 +33,7 @@
 		"remappings": []
 	},
 	"sources": {
-		".deps\\github\\OpenZeppelin\\openzeppelin-contracts\\contracts\\math\\SafeMath.sol": {
+		"contracts\\math\\SafeMath.sol": {
 			"keccak256": "0xf64a28941d25250961c39bafffb245ae62e903abee89f607a7b9ea7e2460bec2",
 			"urls": [
 				"bzz-raw://3dc598b11889c9ed87d726de0158a0f3d24f3df0bb7f438a86a6835c1fcff516",
